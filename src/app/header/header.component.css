@@ -1,0 +1,180 @@
+.header-container{
+  /* position: fixed;
+  width: 100%; */
+  /* background: var(--bg-light-primary); */
+  /* border-bottom: 1px solid; */
+  z-index: 111;
+}
+.header-top{
+  background-color: var(--color-primary);
+  padding: 10px;
+}
+.social-link{
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.social-link img{
+  width: 20px;
+}
+.header-container .logo{
+  /* background-color: var(--bg-light-primary); */
+  /* border: 1px solid red; */
+  height: 60px;
+}
+.header-container.sticky .logo{
+  /* width: 150px; */
+  height: 60px;
+  overflow: hidden;
+  /* border: 2px solid blue; */
+}
+.logo{
+  transition: .3s;
+}
+.logo img{
+  object-fit: contain;
+  height: 100%!important;
+  width: 100%;
+}
+.header-container.home-header{
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  background: rgba(87, 87, 87, 0.4);
+  transition:  all .3s;
+}
+.header-container.home-header .navigation ul{
+  color: #fff;
+}
+.header-container.sticky {
+  background: var(--bg-light-primary);
+  border-color: #222; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.header-container.home-header .header-row{
+  height: 80px;
+}
+.header-row{
+  /* height: 60px; */
+  height: 70px;
+  width: 100%;
+  transition: all .3s;
+}
+.header-container.sticky .header-row{
+  height: 60px;
+  /* border: 1px solid red; */
+}
+.header-container.sticky .navigation ul{
+  color: #222;
+}
+.navigation{
+  /* border: 1px solid; */
+  width: 100%;
+
+}
+.navigation ul{
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  /* width: 100%; */
+margin-left: auto!important;
+/* border: 1px solid; */
+display: inline-flex;
+  /* color: #fff; */
+}
+.navigation ul li{
+  align-self: center;
+  padding: 8px 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.navigation ul li:hover{
+  border-bottom: 2px solid var(--color-primary);
+}
+/* .navigation ul li.active{
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+} */
+.btn-donate{
+  background: #d44f4f;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  transition: 0.5s;
+}
+.btn-donate:hover{
+  transform: scale(1.05);
+}
+.btn-donate mat-icon{
+  font-size: 14px;
+  margin-left: 6px;
+}
+.donate-item{
+  margin-left: auto;
+}
+
+
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+  display: none;
+  color: #000!important;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media (max-width: 820px) {
+
+  .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #646464;
+
+    /* IMPORTANT */
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-1px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .navigation.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navigation ul li {
+    color: #fff;
+    width: 100%;
+  }
+
+  .btn-donate {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    justify-content: center;
+  }
+
+  .navigation li.active {
+    border: none !important;
+  }
+}

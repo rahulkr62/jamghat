@@ -1,0 +1,54 @@
+.ngo-footer {
+  background-color: #1e2a38;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-inline: 15px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 0px 40px;
+}
+
+.footer-box h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #dcdcdc;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-box ul li a {
+  color: #dcdcdc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #f4c430;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  background-color: #18222e;
+  color: #b8b8b8;
+}

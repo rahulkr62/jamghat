@@ -1,0 +1,12 @@
+<header>
+  <app-header></app-header>
+</header>
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>
+
+<div  class="arrow-up" (click)="scrollToTop()" 
+[class.sticky]="isSticky"><mat-icon>keyboard_double_arrow_up</mat-icon></div>

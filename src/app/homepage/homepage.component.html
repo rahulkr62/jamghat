@@ -1,0 +1,111 @@
+<div class="main-content">
+  <div class="hero-grid">
+    <div class="hero-col hero-col-img">
+      <div class="hero-certification-img">
+        <img src="../../assets/regCertification.jpg" alt="">
+      </div>
+    </div>
+    <div class="hero-col">
+      <div class="carousel-div">
+        <ngb-carousel [interval]="2000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+          (slide)="onSlide($event)">
+          <ng-template ngbSlide *ngFor="let img of images; let i = index">
+            <a>
+              <div class="picsum-img-wrapper">
+                <img [src]="img" class="d-block w-100" alt="My image {{ i + 1 }} description" />
+              </div>
+            </a>
+
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </div>
+  </div>
+  <div class="stats-container">
+    <div class="stat-item">
+      <h2>150+</h2>
+      <p>Children Rehabilitated</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+      <h2>20+</h2>
+      <p>Years of Service</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+      <h2>5000+</h2>
+      <p>Lives Touched</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+      <h2>12</h2>
+      <p>Vocational Programs</p>
+    </div>
+  </div>
+
+
+  <div class="about-container">
+    <!-- Left Image Section -->
+    <div class="about-image">
+      <img src="../../assets/s2.jpg" alt="Children" />
+
+      <div class="quote-card">
+        <p class="quote">
+          "Jamghat is my family now."
+        </p>
+        <span class="author">– Rahul, 12 years old</span>
+      </div>
+    </div>
+
+    <!-- Right Content Section -->
+    <div class="about-content">
+      <span class="tag">ABOUT US</span>
+      <h2>From the Streets to a Safe Haven</h2>
+
+      <p>
+        Jamghat was born out of a theatre workshop with street children in 2003.
+        What started as a play became a movement to provide a permanent home and
+        identity to children who had nowhere to go.
+      </p>
+
+      <p>
+        We believe that every child deserves a childhood free from fear, hunger,
+        and exploitation. Our holistic approach focuses not just on shelter, but
+        on emotional healing, education, and skill development.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <div class="icon">
+            <mat-icon>home</mat-icon>
+          </div>
+          <div>
+            <h4>Safe Shelter</h4>
+            <p>24/7 residential care for boys and girls.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">
+            <mat-icon>menu_book</mat-icon>
+          </div>
+          <div>
+            <h4>Education</h4>
+            <p>Formal schooling and bridge courses.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="read-more" href="#">
+        Read our full story <span>→</span>
+      </a>
+    </div>
+  </div>
+
+</div>
