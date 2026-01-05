@@ -49,63 +49,366 @@
     </div>
   </div>
 
+  <!-- About -->
+  <section>
+    <div class="container about-container">
+      <!-- Left Image Section -->
+      <div class="about-image">
+        <img src="../../assets/s2.jpg" alt="Children" />
 
-  <div class="about-container">
-    <!-- Left Image Section -->
-    <div class="about-image">
-      <img src="../../assets/s2.jpg" alt="Children" />
+        <div class="quote-card">
+          <p class="quote">
+            "Every child deserves a chance to dream."
+          </p>
+          <span class="author">- Jamghat Team</span>
+        </div>
+      </div>
 
-      <div class="quote-card">
-        <p class="quote">
-          "Jamghat is my family now."
+      <!-- Right Content Section -->
+      <div class="about-content">
+        <span class="tag">ABOUT US</span>
+        <h2>From the Streets to a Safe Haven</h2>
+
+        <p>
+          Jamghat was born out of a theatre workshop with street children in 2003.
+          What started as a play became a movement to provide a permanent home and
+          identity to children who had nowhere to go.
         </p>
-        <span class="author">– Rahul, 12 years old</span>
-      </div>
-    </div>
 
-    <!-- Right Content Section -->
-    <div class="about-content">
-      <span class="tag">ABOUT US</span>
-      <h2>From the Streets to a Safe Haven</h2>
+        <p>
+          We believe that every child deserves a childhood free from fear, hunger,
+          and exploitation. Our holistic approach focuses not just on shelter, but
+          on emotional healing, education, and skill development.
+        </p>
 
-      <p>
-        Jamghat was born out of a theatre workshop with street children in 2003.
-        What started as a play became a movement to provide a permanent home and
-        identity to children who had nowhere to go.
-      </p>
-
-      <p>
-        We believe that every child deserves a childhood free from fear, hunger,
-        and exploitation. Our holistic approach focuses not just on shelter, but
-        on emotional healing, education, and skill development.
-      </p>
-
-      <div class="features">
-        <div class="feature">
-          <div class="icon">
-            <mat-icon>home</mat-icon>
+        <div class="features">
+          <div class="feature">
+            <div class="icon">
+              <mat-icon>home</mat-icon>
+            </div>
+            <div>
+              <h4 class="fw-500">Safe Shelter</h4>
+              <p class="line-height-1">24/7 residential care for boys and girls.</p>
+            </div>
           </div>
-          <div>
-            <h4>Safe Shelter</h4>
-            <p>24/7 residential care for boys and girls.</p>
+
+          <div class="feature">
+            <div class="icon">
+              <mat-icon>menu_book</mat-icon>
+            </div>
+            <div>
+              <h4 class="fw-500">Education</h4>
+              <p class="line-height-1">Formal schooling and bridge courses.</p>
+            </div>
           </div>
         </div>
 
-        <div class="feature">
-          <div class="icon">
-            <mat-icon>menu_book</mat-icon>
+        <a class="read-more" href="#">
+          Read our full story <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Projects -->
+  <section>
+    <div class="container">
+      <div class="heading-div">
+        <h3 class="mb-0 text-center">Current Projects</h3>
+        <p class="text-center">We focus on sustainable, community-driven initiatives that create lasting change.</p>
+      </div>
+      <div class="programs-container">
+        <div class="program-card" *ngFor="let program of programs">
+
+          <!-- Image -->
+          <div class="image-wrapper">
+            <img [src]="program.image" alt="program image" />
+            <span class="status">Active</span>
           </div>
-          <div>
-            <h4>Education</h4>
-            <p>Formal schooling and bridge courses.</p>
+
+          <!-- Content -->
+          <div class="card-body">
+            <div class="location">
+              <mat-icon>location_on</mat-icon> {{ program.location }}
+            </div>
+
+            <h3 class="title">{{ program.title }}</h3>
+
+            <p class="description">
+              {{ program.description }}
+            </p>
+
+            <h5 class="key-title">KEY ACTIVITIES</h5>
+
+            <div class="chips">
+              <span class="chip" *ngFor="let act of program.activities">
+                {{ act }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Compliance -->
+  <section>
+    <div class="container">
+      <div class="ngo-legal-wrapper">
+
+        <!-- Header -->
+        <div class="ngo-legal-header">
+          <span class="ngo-legal-badge">TRANSPARENCY FIRST</span>
+          <h2 class="ngo-legal-title">Compliance & Legal Documents</h2>
+          <div class="d-flex justify-content-between">
+            <p class="ngo-legal-subtitle">
+              We believe in complete transparency with our stakeholders.
+              Access our financial reports, legal registrations, and policies below.
+            </p>
+
+            <select class="ngo-legal-yearSelect">
+              <option>FY 2023-24</option>
+              <option>FY 2022-23</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="ngo-legal-grid">
+
+          <!-- Left Section -->
+          <div class="ngo-legal-left">
+
+            <!-- Financial Reports -->
+            <div class="ngo-legal-card">
+              <h4 class="ngo-legal-cardTitle">Financial Reports & Audits</h4>
+
+              <div class="ngo-legal-file" *ngFor="let file of financialReports">
+                <div class="ngo-legal-fileInfo">
+                  <span class="ngo-legal-fileIcon"><mat-icon>description</mat-icon></span>
+                  <div>
+                    <p class="ngo-legal-fileName">{{ file.name }}</p>
+                    <span class="ngo-legal-fileSize">{{ file.size }}</span>
+                  </div>
+                </div>
+
+                <button class="ngo-legal-downloadBtn"><mat-icon>download</mat-icon></button>
+              </div>
+            </div>
+
+            <!-- Legal Registrations -->
+            <div class="ngo-legal-card">
+              <h4 class="ngo-legal-cardTitle">Legal Registrations</h4>
+
+              <div class="ngo-legal-regGrid">
+                <div class="ngo-legal-regItem" *ngFor="let reg of registrations">
+                  <p class="ngo-legal-regTitle">{{ reg.title }}</p>
+                  <span class="ngo-legal-regSub">{{ reg.validity }}</span>
+                  <a class="ngo-legal-regLink">View Certificate ↗</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Section -->
+          <div class="ngo-legal-right">
+
+            <!-- Conflict Policy -->
+            <div class="ngo-legal-policyCard">
+              <h4 class="ngo-legal-policyTitle">Conflict of Interest Policy</h4>
+              <p class="ngo-legal-policyText">
+                Board Members, Directors, staff, volunteers, and consultants must
+                avoid conflicts of interest and disclose any potential conflict.
+              </p>
+
+              <ul class="ngo-legal-policyList">
+                <li>Personal benefit not allowed</li>
+                <li>Disclosure mandatory</li>
+                <li>Written approval required</li>
+              </ul>
+
+              <button class="ngo-legal-policyBtn">
+                Download Full Policy PDF
+              </button>
+            </div>
+
+            <!-- MOA Highlights -->
+            <div class="ngo-legal-moaCard">
+              <h4 class="ngo-legal-moaTitle">MOA Highlights</h4>
+
+              <p class="ngo-legal-moaHead">AUTHORIZED SIGNATORY</p>
+              <p class="ngo-legal-moaText">
+                The Director shall be the authorized signatory for all legal,
+                financial, and administrative matters.
+              </p>
+
+              <p class="ngo-legal-moaHead">MEMBERSHIP</p>
+              <p class="ngo-legal-moaText">
+                Open to all supporters. No membership fee required.
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
 
-      <a class="read-more" href="#">
-        Read our full story <span>→</span>
-      </a>
     </div>
-  </div>
+  </section>
+
+
+  <!-- impact -->
+  <section class="ngo-impact-wrapper">
+
+    <div class="ngo-impact-container container">
+
+      <!-- Left Content -->
+      <div class="ngo-impact-left">
+
+        <h2 class="ngo-impact-heading">
+          Real Stories, Real Change
+        </h2>
+
+        <p class="ngo-impact-subtext">
+          Behind every number is a child with a dream. Your support helps us
+          turn those dreams into reality.
+        </p>
+
+        <!-- Testimonial Card -->
+        <div class="ngo-impact-testimonial">
+
+          <span class="ngo-impact-quote">“</span>
+
+          <p class="ngo-impact-quoteText">
+            I used to collect scrap to survive. Today, I am pursuing my
+            graduation and working part-time. Jamghat didn't just give
+            me shelter; they gave me a future.
+          </p>
+
+          <div class="ngo-impact-user">
+            <div class="ngo-impact-avatar">R</div>
+            <div>
+              <p class="ngo-impact-userName">Rahul</p>
+              <span class="ngo-impact-userRole">
+                Former Beneficiary, Now Mentor
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Stats -->
+      <div class="ngo-impact-right">
+
+        <div class="ngo-impact-statCard">
+          <h3>120+</h3>
+          <p>Children Reintegrated</p>
+        </div>
+
+        <div class="ngo-impact-statCard">
+          <h3>450+</h3>
+          <p>Youth Trained</p>
+        </div>
+
+        <div class="ngo-impact-statCard">
+          <h3>15</h3>
+          <p>Community Drives</p>
+        </div>
+
+        <div class="ngo-impact-statCard">
+          <h3>2000+</h3>
+          <p>Medical Checkups</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- join our mission -->
+  <section class="ngo-mission-wrapper">
+    <div class="ngo-mission-container container">
+
+      <!-- Left Content -->
+      <div class="ngo-mission-left">
+        <h2 class="ngo-mission-title">Join Our Mission</h2>
+
+        <p class="ngo-mission-desc">
+          Whether you donate, volunteer, or partner with us, your contribution
+          creates a ripple effect of positive change in a child's life.
+        </p>
+
+        <!-- Action Card : Donate -->
+        <div class="ngo-mission-actionCard">
+          <div class="ngo-mission-icon ngo-mission-iconDonate">❤</div>
+
+          <div class="ngo-mission-actionText">
+            <h4>Donate</h4>
+            <p>Support our programs financially</p>
+          </div>
+
+          <span class="ngo-mission-arrow">→</span>
+        </div>
+
+        <!-- Action Card : Volunteer -->
+        <div class="ngo-mission-actionCard">
+          <div class="ngo-mission-icon ngo-mission-iconVolunteer">👥</div>
+
+          <div class="ngo-mission-actionText">
+            <h4>Volunteer</h4>
+            <p>Share your time and skills</p>
+          </div>
+
+          <span class="ngo-mission-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="ngo-mission-right">
+        <img src="../../assets/s1.jpg" alt="Join Our Mission" class="ngo-mission-image" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- our team -->
+  <section class="ngo-team-wrapper">
+
+    <!-- Heading -->
+    <div class="ngo-team-header">
+      <h2 class="ngo-team-title">Our Team</h2>
+      <p class="ngo-team-subtitle">
+        Dedicated professionals working tirelessly for child rights.
+      </p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="ngo-team-grid">
+
+      <div class="ngo-team-card" *ngFor="let member of teamMembers">
+        <div class="ngo-team-imgWrap">
+          <img [src]="member.image" class="ngo-team-img" />
+        </div>
+
+        <h4 class="ngo-team-name">{{ member.name }}</h4>
+        <span class="ngo-team-role">{{ member.role }}</span>
+
+        <p class="ngo-team-desc">
+          {{ member.description }}
+        </p>
+      </div>
+
+    </div>
+
+    <!-- View More Button -->
+    <div class="ngo-team-btnWrap">
+      <button class="ngo-team-viewBtn">
+        View More
+      </button>
+    </div>
+
+  </section>
 
 </div>
