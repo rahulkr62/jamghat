@@ -22,25 +22,25 @@ export class HomepageComponent {
 
   programs = [
     {
-      title: 'Aangan Day Care',
+      title: "CHILDREN'S HOME",
       location: 'Delhi NCR',
       image: '../../assets/s1.jpg',
-      description: 'Providing safe day care, nutrition, and basic education to children of construction workers.',
-      activities: ['Nutrition', 'Early Education']
+      description: 'Jamghat has been running two shelter homes and one day care centre for 77 girls and boys in Old Delhi.',
+      activities: ['Safe Shelter', 'Early Education', 'Nutrition & Health']
     },
     {
-      title: 'Kaushal Vocational Center',
+      title: 'AANGAN DAYCARE',
       location: 'Old Delhi',
       image: '../../assets/s2.jpg',
-      description: 'Skill development program for youth aged 16-21 focusing on employability.',
-      activities: ['Skill Training', 'Job Placement']
+      description: 'The Daycare centre – Aangan, was started in 2008 and since then has been working directly with the most vulnerable street children.',
+      activities: ['Safe Daycare', 'Nutrition & Health']
     },
     {
-      title: 'Street Outreach',
+      title: 'PRAANGAN',
       location: 'Jama Masjid',
       image: '../../assets/s3.jpg',
-      description: 'Connecting with children living on streets and linking them to support services.',
-      activities: ['Counseling', 'Healthcare']
+      description: 'Praangan is our outreach programme that aims to connect with street children and their families.',
+      activities: ['Street Outreach', 'Family Connect']
     }
   ];
 
@@ -57,22 +57,28 @@ export class HomepageComponent {
 
   teamMembers = [
     {
-      name: 'Amit Kumar',
-      role: 'Director',
+      name: 'Amit K. Sinha',
+      role: 'Member / Founder Director',
       description: 'Leading strategic initiatives and ensuring organizational compliance.',
-      image: 'assets/images/team1.jpg'
+      image: '../../assets/team/amit.jpg'
     },
     {
-      name: 'Sneha Gupta',
-      role: 'Program Manager',
+      name: 'Manoj',
+      role: 'Program Head',
       description: 'Overseeing project implementation and community outreach.',
-      image: 'assets/images/team2.jpg'
+      image: '../../assets/team/manoj.jpg'
     },
     {
-      name: 'Rajesh Singh',
-      role: 'Finance Officer',
+      name: 'Anita Mahato',
+      role: 'Program Manager',
       description: 'Managing financial transparency and statutory audits.',
-      image: 'assets/images/team3.jpg'
+      image: '../../assets/team/anita.jpg'
+    },
+    {
+      name: 'Durgesh Kushwaha',
+      role: 'Finance Manager',
+      description: 'Managing financial transparency and statutory audits.',
+      image: '../../assets/team/durgesh.jpg'
     }
   ];
 }

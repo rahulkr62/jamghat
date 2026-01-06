@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
+import { TeamComponent } from './team/team.component';
 
 const routes: Routes = [
   {
@@ -9,11 +10,14 @@ const routes: Routes = [
   {
     path:'home', component:HomepageComponent
   },
+  {
+    path:'ourTeam', component:TeamComponent
+  },
 ];
 
 @NgModule({
    imports: [ RouterModule.forRoot(routes, {
-      // scrollPositionRestoration: 'top'
+      scrollPositionRestoration: 'top'
     })],
   exports: [RouterModule]
 })

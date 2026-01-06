@@ -26,7 +26,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isSticky = window.pageYOffset > 440;
+    this.isSticky = window.pageYOffset > 80;
   }
 
   menuOpen = false;
