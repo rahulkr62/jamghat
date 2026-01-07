@@ -66,10 +66,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-primary);
+  background-color: var(--bg-light-primary);
+  /* background-color: var(--color-primary); */
   /* red shade */
   padding: 40px 20px;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }
 
@@ -81,19 +82,21 @@
   font-size: 42px;
   font-weight: 700;
   margin: 0;
-  color: #fff;
+  color:  var(--hover-color);
+  /* color: #fff; */
 }
 
 .stat-item p {
   margin-top: 8px;
   font-size: 16px;
   opacity: 0.9;
+  margin-bottom: 0;
 }
 
 .divider {
   width: 1px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(1, 46, 167, 0.4);
 }
 
 
@@ -208,6 +211,9 @@
 }
 
 /* current project */
+.currentProjectSec{
+  background-color: var(--bg-light-primary);
+}
 .heading-div h3 {
   /* font-size: 24px; */
   font-weight: 600;
@@ -254,7 +260,7 @@
   top: 12px;
   left: 12px;
   /* background: #22c55e; */
-  background-color: green;
+  background-color: var(--green);
   color: white;
   font-size: 12px;
   padding: 4px 10px;
@@ -283,8 +289,11 @@
 }
 
 .location {
-  font-size: 13px;
-  color: #6b7280;
+  font-size: 12px;
+  /* color: #6b7280; */
+  color: var(--blue);
+  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 
@@ -749,8 +758,8 @@
 }
 
 .ngo-team-imgWrap {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   margin: 0 auto 16px;
   overflow: hidden;

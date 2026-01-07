@@ -58,9 +58,7 @@
   height: 70px;
 }
 .header-container.sticky .header-top{
-  height: 0;
-  padding: 0;
-  overflow: hidden;
+  display: none;
 }
 .header-container.home-header .header-row{
   height: 80px;
@@ -71,6 +69,7 @@
   width: 100%;
   transition: all .3s;
 }
+
 /* .header-container.sticky .header-row{
   height: 60px;
   border: 1px solid red;
@@ -107,13 +106,14 @@ display: inline-flex;
   border-bottom: 2px solid var(--color-primary);
 } */
 .btn-donate{
-  background: #d44f4f;
+  background: var(--color-primary);
   color: #fff;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   margin-left: auto;
   transition: 0.5s;
+  font-size: 16px;
 }
 .btn-donate:hover{
   transform: scale(1.05);

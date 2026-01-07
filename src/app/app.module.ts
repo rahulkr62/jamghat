@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
+import { SuccessStoriesComponent } from './success-stories/success-stories.component';
+import { MediaCenterComponent } from './media-center/media-center.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { TeamComponent } from './team/team.component';
     HeaderComponent,
     FooterComponent,
     HomepageComponent,
-    TeamComponent
+    TeamComponent,
+    ContactComponent,
+    SuccessStoriesComponent,
+    MediaCenterComponent
   ],
   imports: [
     BrowserModule,

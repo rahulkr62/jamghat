@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 :root{
-  --color-primary: #d44f4f;
+  --color-primary: #d82521;
+  --hover-color:#B71C1C;
+  --green: #2E7D32;
+  --blue: #1E5AA8;
+  --light-background: #F8F8F8;
+  --dark:#263238;
   --color-secondary: #FFB44C;
   --bg-light-primary: #F2E9E9;
   /* soft pinch color */
@@ -27,7 +32,6 @@ img {
   object-fit: cover;
   object-position: center;
 }
-
 .text-center{
   text-align: center;
 }
@@ -84,7 +88,15 @@ ul li {
 .line-height-1{
   line-height: 1.2!important;
 }
-
+.title-heading{
+  font-size: 28px!important;
+  font-weight: 700!important;
+}
+.heading-badge {
+  color: #ef4444!important;
+  font-size: 12px!important;
+  font-weight: 600!important;
+}
 mat-icon{
   width: auto!important;
   height: auto!important;

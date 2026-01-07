@@ -1,0 +1,106 @@
+.ngo-legal-badge {
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ngo-legal-title {
+  /* font-size: 28px;
+  font-weight: 700; */
+  margin: 8px 0;
+}
+
+.ngo-legal-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+}
+.ngo-team-wrapper {
+  text-align: center;
+}
+
+.ngo-team-header {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.ngo-team-title {
+  /* font-size: 26px;
+  font-weight: 700; */
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.ngo-team-subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* Grid */
+.ngo-team-grid {
+  margin: auto;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+/* Card */
+.ngo-team-card {
+  position: relative;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid; */
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.ngo-team-card:hover .ngo-team-imgWrap img{
+  transform: scale(1.1);
+}
+.ngo-team-imgWrap {
+  aspect-ratio: 1/.9;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 5px solid #fff; */
+  /* box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.08); */
+}
+
+.ngo-team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+}
+.team-content{
+  padding: 10px 20px ;
+}
+.ngo-team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ngo-team-role {
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.ngo-team-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Button */
+.ngo-team-btnWrap {
+  margin-top: 50px;
+}
+
+.teamViewBtn{
+  color: var(--color-primary);
+  margin-bottom: 0;
+  cursor: pointer;
+}

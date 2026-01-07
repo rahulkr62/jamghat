@@ -1,0 +1,95 @@
+
+
+.ngo-press-wrapper .ngo-team-header{
+  text-align: center;
+}
+.ngo-press-title {
+
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+.ngo-team-subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
+/* Card */
+.ngo-press-card {
+  display: flex;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Image */
+.ngo-press-img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Content */
+.ngo-press-content {
+  flex: 1;
+}
+
+/* Meta */
+.ngo-press-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.ngo-press-date {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Badge */
+.ngo-press-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.ngo-press-badge.release {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.ngo-press-badge.media {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Text */
+.ngo-press-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.ngo-press-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Link */
+.ngo-press-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.ngo-press-link:hover {
+  text-decoration: underline;
+}
