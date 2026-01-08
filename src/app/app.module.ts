@@ -13,6 +13,9 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { SuccessStoriesComponent } from './success-stories/success-stories.component';
 import { MediaCenterComponent } from './media-center/media-center.component';
+import { AboutComponent } from './about/about.component';
+import { CertificationComponent } from './certification/certification.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { MediaCenterComponent } from './media-center/media-center.component';
     TeamComponent,
     ContactComponent,
     SuccessStoriesComponent,
-    MediaCenterComponent
+    MediaCenterComponent,
+    AboutComponent,
+    CertificationComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

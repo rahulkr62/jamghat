@@ -5,6 +5,9 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { SuccessStoriesComponent } from './success-stories/success-stories.component';
 import { MediaCenterComponent } from './media-center/media-center.component';
+import { AboutComponent } from './about/about.component';
+import { CertificationComponent } from './certification/certification.component';
+import { EventsComponent } from './events/events.component';
 
 const routes: Routes = [
   {
@@ -14,10 +17,19 @@ const routes: Routes = [
     path:'home', component:HomepageComponent
   },
   {
+    path:'about', component:AboutComponent
+  },
+  {
     path:'ourTeam', component:TeamComponent
   },
   {
+    path:'certification', component:CertificationComponent
+  },
+  {
     path:'contact', component:ContactComponent
+  },
+  {
+    path:'events', component:EventsComponent
   },
   {
     path:'success-stories', component:SuccessStoriesComponent

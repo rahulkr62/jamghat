@@ -9,26 +9,27 @@
   </div>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center header-row">
-      <div class="logo" routerLink="/">
+      <div class="logo" routerLink="">
         <img src="../../assets/logo2.png" alt="">
       </div>
 
       <!-- MENU -->
       <div class="navigation d-flex align-items-center" [class.open]="menuOpen">
         <ul class="d-flex">
-          <li routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+          <li routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
             Who we are</li>
 
-          <li routerLink="" routerLinkActive="active" (click)="closeMenu()">What we do</li>
+          <!-- <li routerLink="" routerLinkActive="active" (click)="closeMenu()">What we do</li> -->
 
-          <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Outreach & Impact</li>
+          <li routerLink="impact" routerLinkActive="active" (click)="closeMenu()">Outreach & Impact</li>
 
-          <!-- <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Get Involved</li> -->
+          <li routerLink="success-stories" routerLinkActive="active" (click)="closeMenu()">Success Stories</li>
 
-          <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions</li>
+          <li routerLink="certification" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions</li>
 
+          <li routerLink="events" routerLinkActive="active" (click)="closeMenu()">Events</li>
           <li routerLink="media-center" routerLinkActive="active" (click)="closeMenu()">Media Centre</li>
-          <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Resource Center</li>
+          <!-- <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Resource Center</li> -->
 
           <li routerLink="contact" routerLinkActive="active" (click)="closeMenu()">Contact Us</li>
         </ul>

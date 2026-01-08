@@ -1,0 +1,46 @@
+
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+.about-content p{
+  font-size: 16px;
+  line-height: 1.7;
+}
+.ab-img{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.mission-grid{
+  display: grid;
+  grid-template-columns: .7fr 1fr 1fr;
+  gap: 20px;
+}
+.mission-grid h4{
+  font-size: 20px;
+  font-weight: 600;
+}
+.mission-content p{
+  line-height: 1.7;
+  font-size: 15px;
+}
+.activities-heading{
+  font-size: 17px;
+  font-weight: 500;
+}
+.activities ul{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.activities ul li{
+  list-style: disc;
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.aim-img{
+  border-radius: 20px;
+  overflow: hidden;
+}
