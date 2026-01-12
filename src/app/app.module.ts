@@ -16,6 +16,9 @@ import { MediaCenterComponent } from './media-center/media-center.component';
 import { AboutComponent } from './about/about.component';
 import { CertificationComponent } from './certification/certification.component';
 import { EventsComponent } from './events/events.component';
+import { SuccessStoriesDetailComponent } from './success-stories-detail/success-stories-detail.component';
+import { DonateComponent } from './donate/donate.component';
+import { OutreachImpactComponent } from './outreach-impact/outreach-impact.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { EventsComponent } from './events/events.component';
     MediaCenterComponent,
     AboutComponent,
     CertificationComponent,
-    EventsComponent
+    EventsComponent,
+    SuccessStoriesDetailComponent,
+    DonateComponent,
+    OutreachImpactComponent
   ],
   imports: [
     BrowserModule,

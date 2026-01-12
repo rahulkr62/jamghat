@@ -1,7 +1,10 @@
 
+section{
+  padding-inline: 0;
+}
 .about-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 30px;
   margin-top: 40px;
 }
@@ -15,32 +18,110 @@
 }
 .mission-grid{
   display: grid;
-  grid-template-columns: .7fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.mission-grid h4{
-  font-size: 20px;
-  font-weight: 600;
-}
-.mission-content p{
-  line-height: 1.7;
-  font-size: 15px;
-}
+
 .activities-heading{
   font-size: 17px;
   font-weight: 500;
 }
 .activities ul{
   margin-top: 15px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .activities ul li{
-  list-style: disc;
+  display: flex;
   margin-bottom: 10px;
   line-height: 1.7;
   font-size: 15px;
+}
+
+.activities ul li mat-icon{
+  font-size: 14px;
+}
+.li-check{
+  margin-right: 10px;
 }
 .aim-img{
   border-radius: 20px;
   overflow: hidden;
 }
+
+.mission-cont{
+  max-height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  url('../../assets/missionImg.jpg') no-repeat;
+  background-position: 100% 15%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mission-cont::after{
+  position: absolute;
+  inset: -150px 0 0 -100px;
+  content: '';
+  width: 40%;
+  height: 700px;
+  transform: rotate(20deg);
+  background: var(--color-primary);
+  z-index: 1;
+} 
+.mission-cont .container{
+  position: relative;
+  padding-block: 60px;
+  z-index: 2;
+}
+
+.mission-heading{
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+.mission-box-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.mission-frame{
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 6px;
+}
+.mission-frame iframe{
+  z-index: 1;
+}
+.mission-card{
+  background-color: #fff;
+  padding: 20px;
+  align-self: flex-start;
+  border-radius: 6px;
+}
+.mission-card .icon{
+  position: absolute;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  background-color: var(--color-primary);
+  display: inline-flex;
+  padding: 15px;
+  border-radius: 10px;
+}
+.icon img{
+  width: 30px;
+}
+.mission-box-grid h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+/* .mission-card p{
+  line-height: 1.7;
+  font-size: 15px;
+} */

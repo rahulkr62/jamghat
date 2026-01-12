@@ -1,0 +1,203 @@
+
+/* impact */
+.ngo-impact-wrapper {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.ngo-impact-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left */
+.ngo-impact-heading {
+  /* font-size: 36px;
+  font-weight: 700; */
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.ngo-impact-subtext {
+  font-size: 16px;
+  color: #fecaca;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.ngo-impact-testimonial {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+}
+
+.ngo-impact-quote {
+  font-size: 48px;
+  opacity: 0.4;
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+
+.ngo-impact-quoteText {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  padding-top: 20px;
+}
+
+/* User */
+.ngo-impact-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ngo-impact-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #da8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.ngo-impact-userName {
+  font-weight: 600;
+  margin-bottom: 0
+}
+
+.ngo-impact-userRole {
+  font-size: 13px;
+  color: #fecaca;
+}
+
+/* Right Stats */
+.ngo-impact-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ngo-impact-statCard {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.ngo-impact-statCard h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.ngo-impact-statCard p {
+  font-size: 14px;
+  color: #fee2e2;
+}
+
+/* join our mission */
+
+.ngo-mission-container {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Left */
+.ngo-mission-title {
+  /* font-size: 34px;
+  font-weight: 700; */
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.ngo-mission-desc {
+  font-size: 16px;
+  color: #475569;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+/* Action Cards */
+.ngo-mission-actionCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ngo-mission-left {
+  padding: 20px 40px;
+}
+
+.ngo-mission-actionCard:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.ngo-mission-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.ngo-mission-iconDonate {
+  background: #fee2e2;
+  color: var(--color-primary);
+}
+
+.ngo-mission-iconVolunteer {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.ngo-mission-actionText h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ngo-mission-actionText p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.ngo-mission-arrow {
+  margin-left: auto;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* Right Image */
+.ngo-mission-right {
+  position: relative;
+}
+
+.ngo-mission-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  /* border-radius: 20px; */
+}
