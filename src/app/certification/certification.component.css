@@ -1,4 +1,6 @@
-
+a{
+  text-decoration: none;
+}
 /* Header */
 .ngo-ar-header {
   max-width: 1100px;

@@ -1,4 +1,87 @@
 
+/* Grid */
+.ngo-prog-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.ngo-prog-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.ngo-prog-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.ngo-prog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content */
+.ngo-prog-content {
+  padding: 20px;
+}
+
+.ngo-prog-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ngo-prog-badge {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.ngo-prog-location {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ngo-prog-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0;
+  color: #0f172a;
+}
+
+.ngo-prog-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Stats */
+.ngo-prog-stats {
+  display: flex;
+  gap: 18px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #334155;
+}
+.ngo-prog-stats mat-icon{
+  font-size: 14px;
+  margin-right: 5px;
+}
+.ngo-prog-stats span{
+  display: inline-flex;
+  align-items: center;
+}
 /* impact */
 .ngo-impact-wrapper {
   background: var(--color-primary);
@@ -200,4 +283,19 @@
   height: 420px;
   object-fit: cover;
   /* border-radius: 20px; */
+}
+@media (max-width: 992px) {
+  .ngo-prog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .ngo-prog-img {
+    height: 180px;
+  }
+
+  .ngo-prog-title {
+    font-size: 16px;
+  }
 }

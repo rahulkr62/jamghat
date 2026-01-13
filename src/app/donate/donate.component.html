@@ -1,9 +1,83 @@
-<section>
+<section class="wrapper-section">
   <div class="container">
-     <div class="donation-hero">
+    <div class="donation-hero">
       <div class="overlay">
         <h1>Support Our Cause</h1>
-        <p>Your small contribution can bring a big change.</p>
+        <p>Show your support and donate for Jamghat's work!</p>
+      </div>
+    </div>
+    <div class="donate-grid">
+      <div>
+        <p>
+          Jamghat is a volunteer based NGO with inadequate regular or formal means of funding. We rely heavily on
+          donations of finance, time and materials from generous individuals and companies. We need resources to sustain
+          our programmes. Your donation for our programmes will enable us to continue with our services for children,
+          from providing children’s education to healthcare, to maintaining comfortable living conditions for their
+          holistic growth to providing them with appropriate vocational training for developing them into independent
+          and confident adults.
+        </p>
+        <p>
+          Jamghat also requires your presence and positive energy. Come share stories with the children, nurture joy and
+          offer positive direction through your own experiences. Making a difference requires that you are open to
+          sharing your kindness and ready to listen to a child that needs to share his/her story. All that is needed for
+          you to be an inspiration in a child’s life is your love and attention, to encourage smiles and joyful
+          existence.
+        </p>
+        <h3>OTHERWISE..</h3>
+        <p>
+          Jamghat is a volunteer based NGO that has no regular or formal means of funding. We rely heavily on donations
+          of time, materials and finances from generous individuals and companies. If you feel moved to help Jamghat,
+          please contact us. We are open to your ideas!
+        </p>
+        <!-- <button class="donate_btn">Donate Now <mat-icon>arrow_right_alt</mat-icon></button> -->
+      </div>
+      <div class="donation-card">
+        <h2>Make a Donation</h2>
+        <form (ngSubmit)="onSubmit()">
+          <input type="text" formControlName="name" placeholder="Name" />
+          <input type="number" formControlName="mobile" placeholder="Mobile Number" />
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">Homeless Child <button type="button"
+                class="p-1 pb-0 info-btn"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>2000</span>
+              <button class="btn-qty minus-qty" type="button" (click)="noOfQty('homelessMinus', 'homeless')">-</button>
+              <input type="text" value="{{this.homelessQty}}" placeholder="qty" class="mb-0" readonly>
+              <button class="btn-qty add-qty" type="button" (click)="noOfQty('homelessAdd', 'homeless')">+</button>
+            </div>
+          </div>
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">General Fund <button type="button"
+                class="p-1 pb-0 info-btn"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>250</span> <button class="btn-qty minus-qty" type="button"
+                (click)="noOfQty('generalMinus', 'general')">-</button> <input type="text" value="{{this.GeneralQty}}"
+                placeholder="qty" class="mb-0" readonly> <button class="btn-qty add-qty" type="button"
+                (click)="noOfQty('generalAdd', 'general')">+</button>
+            </div>
+          </div>
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">Corpus Fund <button type="button"
+                class="p-1 pb-0 info-btn"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>500</span> <button class="btn-qty minus-qty" type="button"
+                (click)="noOfQty('corpusMinus', 'corpus')">-</button><input type="text" value="{{this.corpusQty}}"
+                placeholder="qty" class="mb-0" readonly> <button class="btn-qty add-qty" type="button"
+                (click)="noOfQty('corpusAdd', 'corpus')">+</button>
+            </div>
+          </div>
+          <!-- <select name="" id="">
+            <option value="education">Homeless Child</option>
+            <option value="health">General Fund</option>
+            <option value="empowering">Corpus Fund</option>
+          </select> -->
+          <input type="number" formControlName="amount" value="{{this.totalAmount}}" placeholder="Amount" />
+          <!-- <textarea name="about" formControlName="about" id=""></textarea> -->
+
+          <button class="donate-btn" type="button">Donate Now</button>
+        </form>
+
+        <p class="secure-text"> 100% Secure Payment</p>
       </div>
     </div>
   </div>

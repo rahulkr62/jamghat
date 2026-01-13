@@ -118,7 +118,9 @@
   border-radius: 14px;
   padding: 24px;
 }
-
+.ngo-follow-card h4{
+  color: #fff;
+}
 .ngo-social-icons {
   display: flex;
   gap: 12px;

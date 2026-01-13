@@ -193,7 +193,7 @@
                   </div>
                 </div>
 
-                <button class="ngo-legal-downloadBtn"><mat-icon>download</mat-icon></button>
+                <a href="{{file.link}}" download="{{file.download}}" class="ngo-legal-downloadBtn"><mat-icon>download</mat-icon></a>
               </div>
             </div>
 
@@ -205,7 +205,7 @@
                 <div class="ngo-legal-regItem" *ngFor="let reg of registrations">
                   <p class="ngo-legal-regTitle">{{ reg.title }}</p>
                   <span class="ngo-legal-regSub">{{ reg.validity }}</span>
-                  <a class="ngo-legal-regLink">View Certificate ↗</a>
+                  <a href="{{reg.link}}" download="{{reg.download}}" class="ngo-legal-regLink">View Certificate ↗</a>
                 </div>
               </div>
             </div>

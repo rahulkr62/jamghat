@@ -45,14 +45,14 @@ export class HomepageComponent {
   ];
 
    financialReports = [
-    { name: 'Audited Financial Statement 2023-24', size: 'PDF · 2.4 MB' },
-    { name: 'FCRA Annual Return 2023-24', size: 'PDF · 1.8 MB' },
-    { name: 'Annual Activity Report 2023-24', size: 'PDF · 5.6 MB' }
+    { name: 'Annual Report FY 2023–24', size: 'PDF · 2.4 MB', link:'../../assets/pdf/Annual Report FY 2023-24.pdf', download:'Annual Report FY 2023-24' },
+    { name: 'Audited Financial Statements FY 2023-24', size: 'PDF · 1.8 MB', link:'../../assets/pdf/Audited Financial Statements FY 2023-24.pdf', download:'Annual Report FY 2023-24' },
+    { name: 'Audited Financial Statements FY 2024-25', size: 'PDF · 5.6 MB', link:'../../assests/pdf/Audited Financial Statements FY 2024-25.pdf', download:'Audited Financial Statements FY 2024-25' }
   ];
 
   registrations = [
-    { title: 'FCRA Registration', validity: 'Valid till 2028' },
-    { title: '12A & 80G Certificate', validity: 'Permanent Validity' }
+    { title: 'FCRA Renewed Certificate', validity: 'Valid till 2028', link:'../../assets/pdf/FCRA  Renewal Certificate_2023.pdf', download:'FCRA  Renewal Certificate_2023' },
+    { title: 'Registration Certificate', validity: 'Permanent Validity', link:'../../assets/pdf/Registation Certificate.pdf', download:'Registation Certificate' }
   ];
 
   teamMembers = [
