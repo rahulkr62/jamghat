@@ -167,10 +167,11 @@
               Access our financial reports, legal registrations, and policies below.
             </p>
 
-            <select class="ngo-legal-yearSelect">
-              <option>FY 2023-24</option>
-              <option>FY 2022-23</option>
-            </select>
+            <div class="ngo-legal-yearSelect">
+              <!-- <option>FY 2023-24</option> -->
+              FY 2023-24
+              <!-- <option>FY 2022-23</option> -->
+            </div>
           </div>
         </div>
 
@@ -445,7 +446,7 @@
     <!-- Team Grid -->
     <div class="ngo-team-grid">
 
-      <div class="ngo-team-card" *ngFor="let member of teamMembers.slice(0,4)">
+      <div class="ngo-team-card" *ngFor="let member of teamMembers.slice(0,5)">
         <div class="ngo-team-imgWrap">
           <img [src]="member.image" class="ngo-team-img" />
         </div>

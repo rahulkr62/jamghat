@@ -1,17 +1,18 @@
-
-
-.ngo-press-wrapper .ngo-team-header{
+.ngo-press-wrapper .ngo-team-header {
   text-align: center;
 }
+
 .ngo-press-title {
 
   color: #0f172a;
   margin-bottom: 40px;
 }
+
 .ngo-team-subtitle {
   font-size: 16px;
   color: #64748b;
 }
+
 /* Card */
 .ngo-press-card {
   display: flex;
@@ -92,4 +93,16 @@
 
 .ngo-press-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+  .ngo-press-card {
+    flex-direction: column;
+  }
+
+  /* Image */
+  .ngo-press-img {
+    width: 100%;
+    height: auto;
+  }
 }

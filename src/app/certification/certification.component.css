@@ -1,6 +1,7 @@
-a{
+a {
   text-decoration: none;
 }
+
 /* Header */
 .ngo-ar-header {
   max-width: 1100px;
@@ -115,4 +116,16 @@ a{
 
 .ngo-ar-cta-btn:hover {
   background: #991b1b;
+}
+
+@media (max-width: 768px) {
+  .ngo-ar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .ngo-ar-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

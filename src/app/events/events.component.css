@@ -1,15 +1,17 @@
-.event-grid{
+.event-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.event-img-div{
+
+.event-img-div {
   position: relative;
   aspect-ratio: 1/.8;
   border-radius: 10px;
   overflow: hidden;
 }
-.event-ab-text{
+
+.event-ab-text {
   position: absolute;
   width: 100%;
   min-height: 60px;
@@ -17,21 +19,41 @@
   bottom: 0px;
   padding: 0 20px;
 }
-.event-ab-text div{
+
+.event-ab-text div {
   width: 100%;
   height: 100%;
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
-.event-ab-text h4{
+
+.event-ab-text h4 {
   margin-bottom: 0;
   display: -webkit-box;
   line-clamp: 1;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 1;       
+  -webkit-line-clamp: 1;
   overflow: hidden;
   -webkit-box-orient: vertical;
   font-size: 12px;
   font-weight: 500;
+}
+
+@media (max-width: 998px) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .event-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
