@@ -33,7 +33,7 @@
 
 .picsum-img-wrapper {
   /* height: 500px; */
-  /* aspect-ratio: 1/.35; */
+  aspect-ratio: 1/.55;
   /* aspect-ratio: 16/9; */
   overflow: hidden;
 }
@@ -213,6 +213,9 @@
 /* current project */
 .currentProjectSec{
   background-color: var(--bg-light-primary);
+}
+.currentProjectCont{
+  max-width: 800px!important;
 }
 .heading-div h3 {
   /* font-size: 24px; */

@@ -13,7 +13,7 @@ export class HomepageComponent {
   images = [
     // '../../assets/s1.jpg',
     '../../assets/s2.jpg',
-    // '../../assets/s3.jpg',
+    '../../assets/s4.jpg',
   ];
 
   onSlide(event: NgbSlideEvent) {
@@ -30,7 +30,7 @@ export class HomepageComponent {
     // },
     {
       title: 'AANGAN DAYCARE',
-      location: 'Old Delhi',
+      location: 'Jama Masjid',
       image: '../../assets/s2.jpg',
       description: 'The Daycare centre – Aangan, was started in 2008 and since then has been working directly with the most vulnerable street children.',
       activities: ['Safe Daycare', 'Nutrition & Health']

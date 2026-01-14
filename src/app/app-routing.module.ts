@@ -11,6 +11,10 @@ import { EventsComponent } from './events/events.component';
 import { SuccessStoriesDetailComponent } from './success-stories-detail/success-stories-detail.component';
 import { DonateComponent } from './donate/donate.component';
 import { OutreachImpactComponent } from './outreach-impact/outreach-impact.component';
+import { DonationComponent } from './donation/donation.component';
+import { EramStoriesComponent } from './eram-stories/eram-stories.component';
+import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
+import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
 
 const routes: Routes = [
   {
@@ -41,6 +45,15 @@ const routes: Routes = [
     path:'success-stories', component:SuccessStoriesComponent
   },
   {
+    path:'eram-stories', component:EramStoriesComponent
+  },
+  {
+    path:'kalam-stories', component:KalamStoriesComponent
+  },
+  {
+    path:'rajiv-stories', component:RajivStoriesComponent
+  },
+  {
     path:'success-stories-detail', component:SuccessStoriesDetailComponent
   },
   {
@@ -48,6 +61,9 @@ const routes: Routes = [
   },
   {
     path:'donate', component:DonateComponent
+  },
+  {
+    path:'donation', component:DonationComponent
   },
 ];
 

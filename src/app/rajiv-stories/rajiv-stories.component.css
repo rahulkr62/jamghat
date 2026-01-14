@@ -1,0 +1,20 @@
+.stories-heading{
+  font-size: 28px;
+  font-weight: 600;
+}
+.success-img{
+  float: right;
+  max-width: 550px;
+  aspect-ratio: 1;
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.success-img img{
+  border-radius: 10px;
+   object-position: center -80px;
+}
+.success-row p{
+  line-height: 1.7;
+  font-size: 15px;
+}

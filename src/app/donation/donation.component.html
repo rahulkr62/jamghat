@@ -1,0 +1,125 @@
+<div class="hero-section">
+  <img src="../../assets/s2.jpg" alt="">
+  <div class="hero-content-ab">
+    <div class="hero-content-div">
+      <h1>Help Equip Vulnerable <br> Street Children & Women</h1>
+      <p>Jamghat offers shelter, education, healthcare and holistic support to street children and vulnerable women in Delhi since 2003.</p>
+      <button>Donate Now</button>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="donate-grid">
+      <div class="donation-content">
+        <h3 class="title-heading">
+          Why Your Support Matters
+        </h3>
+        <p>Jamghat runs multiple programmes to help children and women realise their dreams and rejoin society with dignity.</p>
+        <div class="sm-card">
+          <div class="sm-icon sm-icon-edu">
+            <mat-icon>menu_book</mat-icon>
+          </div>
+          <div>
+            <h4>Education & Development</h4>
+            <p>Schooling, remedial classes, life-skills and confidence building.</p>
+          </div>
+        </div>
+        <div class="sm-card">
+          <div class="sm-icon sm-icon-health">
+            <mat-icon>favorite</mat-icon>
+          </div>
+          <div>
+            <h4>Holistic Well-Being</h4>
+            <p>Food, healthcare and emotional support.</p>
+          </div>
+        </div>
+        <div class="sm-card">
+          <div class="sm-icon sm-icon-women">
+            <mat-icon>diversity_2</mat-icon>
+          </div>
+          <div>
+            <h4>Empowerment for Women</h4>
+            <p>Livelihood opportunities through programmes like Ekjut.</p>
+          </div>
+        </div>
+        <div class="sm-card">
+          <div class="sm-icon sm-icon-home">
+            <mat-icon>home</mat-icon>
+          </div>
+          <div>
+            <h4>Safe Homes & Care</h4>
+            <p>Children homes and day care for vulnerable kids</p>
+          </div>
+        </div>
+      </div>
+      <div class="donation-card">
+        <h2>Make a Donation</h2>
+        <form (ngSubmit)="onSubmit()">
+          <input type="text" formControlName="name" placeholder="Name" />
+          <input type="number" formControlName="mobile" placeholder="Mobile Number" />
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">Homeless Child <button type="button"
+                class="p-1 pb-0 info-btn"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>2000</span>
+              <button class="btn-qty minus-qty" type="button" (click)="noOfQty('homelessMinus', 'homeless')">-</button>
+              <input type="text" value="{{this.homelessQty}}" placeholder="qty" class="mb-0" readonly>
+              <button class="btn-qty add-qty" type="button" (click)="noOfQty('homelessAdd', 'homeless')">+</button>
+            </div>
+          </div>
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">General Fund <button type="button"
+                class="p-1 pb-0 info-btn"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>250</span> <button class="btn-qty minus-qty" type="button"
+                (click)="noOfQty('generalMinus', 'general')">-</button> <input type="text" value="{{this.GeneralQty}}"
+                placeholder="qty" class="mb-0" readonly> <button class="btn-qty add-qty" type="button"
+                (click)="noOfQty('generalAdd', 'general')">+</button>
+            </div>
+          </div>
+          <div class="fund-add">
+            <div class="d-flex align-items-center mb-0">Corpus Fund <button type="button"
+                class="p-1 pb-0 info-btn" (click)="openInfoModal()"><mat-icon>info_outline</mat-icon> </button></div>
+            <div class="d-flex align-items-center gap-2">
+              <span>500</span> <button class="btn-qty minus-qty" type="button"
+                (click)="noOfQty('corpusMinus', 'corpus')">-</button><input type="text" value="{{this.corpusQty}}"
+                placeholder="qty" class="mb-0" readonly> <button class="btn-qty add-qty" type="button"
+                (click)="noOfQty('corpusAdd', 'corpus')">+</button>
+            </div>
+          </div>
+          <!-- <select name="" id="">
+            <option value="education">Homeless Child</option>
+            <option value="health">General Fund</option>
+            <option value="empowering">Corpus Fund</option>
+          </select> -->
+          <input type="number" formControlName="amount" value="{{this.totalAmount}}" placeholder="Amount" />
+          <!-- <textarea name="about" formControlName="about" id=""></textarea> -->
+
+          <button class="donate-btn" type="button">Donate Now</button>
+        </form>
+
+        <p class="secure-text"> 100% Secure Payment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Modal Template -->
+<ng-template #infoDialog>
+  <h2 mat-dialog-title>Information</h2>
+
+  <mat-dialog-content>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti ut, ducimus, aspernatur perferendis asperiores, numquam animi nisi dolore eaque totam doloribus voluptatem optio eos et tempora ipsa impedit mollitia laudantium cum velit odit quaerat tenetur modi. Vitae molestiae, voluptate dignissimos laborum quae quas unde odio, aliquid distinctio perferendis earum a assumenda atque eveniet. Ratione facilis ex, a reprehenderit, obcaecati eius dignissimos eos, impedit minus inventore quia? Sed natus et dolorem sunt eligendi molestias fugiat, praesentium amet dolor, illo impedit incidunt nemo magni! Facilis reprehenderit dolorum necessitatibus exercitationem dolorem eligendi tempore quisquam dignissimos commodi ipsa corrupti, quae obcaecati sunt quam?
+    </p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+</ng-template>

@@ -19,6 +19,11 @@ import { EventsComponent } from './events/events.component';
 import { SuccessStoriesDetailComponent } from './success-stories-detail/success-stories-detail.component';
 import { DonateComponent } from './donate/donate.component';
 import { OutreachImpactComponent } from './outreach-impact/outreach-impact.component';
+import { DonationComponent } from './donation/donation.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { EramStoriesComponent } from './eram-stories/eram-stories.component';
+import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
+import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,11 @@ import { OutreachImpactComponent } from './outreach-impact/outreach-impact.compo
     EventsComponent,
     SuccessStoriesDetailComponent,
     DonateComponent,
-    OutreachImpactComponent
+    OutreachImpactComponent,
+    DonationComponent,
+    EramStoriesComponent,
+    KalamStoriesComponent,
+    RajivStoriesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +52,7 @@ import { OutreachImpactComponent } from './outreach-impact/outreach-impact.compo
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
