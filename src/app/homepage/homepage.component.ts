@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +8,7 @@ import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
- pauseOnHover = true;
+  pauseOnHover = true;
   pauseOnFocus = false;
 
   images = [
@@ -44,15 +45,15 @@ export class HomepageComponent {
     }
   ];
 
-   financialReports = [
-    { name: 'Annual Report FY 2023–24', size: 'PDF · 2.4 MB', link:'../../assets/pdf/Annual Report FY 2023-24.pdf', download:'Annual Report FY 2023-24' },
-    { name: 'Audited Financial Statements FY 2023-24', size: 'PDF · 1.8 MB', link:'../../assets/pdf/Audited Financial Statements FY 2023-24.pdf', download:'Annual Report FY 2023-24' },
-    { name: 'Audited Financial Statements FY 2024-25', size: 'PDF · 5.6 MB', link:'../../assests/pdf/Audited Financial Statements FY 2024-25.pdf', download:'Audited Financial Statements FY 2024-25' }
+  financialReports = [
+    { name: 'Annual Report FY 2023–24', size: 'PDF · 2.4 MB', link: '../../assets/pdf/Annual Report FY 2023-24.pdf', download: 'Annual Report FY 2023-24' },
+    { name: 'Audited Financial Statements FY 2023-24', size: 'PDF · 1.8 MB', link: '../../assets/pdf/Audited Financial Statements FY 2023-24.pdf', download: 'Annual Report FY 2023-24' },
+    { name: 'Audited Financial Statements FY 2024-25', size: 'PDF · 5.6 MB', link: '../../assests/pdf/Audited Financial Statements FY 2024-25.pdf', download: 'Audited Financial Statements FY 2024-25' }
   ];
 
   registrations = [
-    { title: 'FCRA Renewed Certificate', validity: 'Valid till 2028', link:'../../assets/pdf/FCRA  Renewal Certificate_2023.pdf', download:'FCRA  Renewal Certificate_2023' },
-    { title: 'Registration Certificate', validity: 'Permanent Validity', link:'../../assets/pdf/Registation Certificate.pdf', download:'Registation Certificate' }
+    { title: 'FCRA Renewed Certificate', validity: 'Valid till 2028', link: '../../assets/pdf/FCRA  Renewal Certificate_2023.pdf', download: 'FCRA  Renewal Certificate_2023' },
+    { title: 'Registration Certificate', validity: 'Permanent Validity', link: '../../assets/pdf/Registation Certificate.pdf', download: 'Registation Certificate' }
   ];
 
   teamMembers = [
@@ -87,4 +88,68 @@ export class HomepageComponent {
       image: '../../assets/team/durgesh.jpg'
     }
   ];
+
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 5
+      }
+    },
+  }
+
+  sliderImg = [
+    {
+      img: '../../assets/supporters/1.jpg'
+    },
+    {
+      img: '../../assets/supporters/2.jpg'
+    },
+    {
+      img: './../assets/supporters/3.jpg'
+    },
+    {
+      img: './../assets/supporters/4.jpg'
+    },
+    {
+      img: './../assets/supporters/5.jpg'
+    },
+    {
+      img: './../assets/supporters/6.jpg'
+    },
+    {
+      img: './../assets/supporters/7.jpg'
+    },
+    {
+      img: './../assets/supporters/8.jpg'
+    },
+    {
+      img: './../assets/supporters/9.jpg'
+    },
+    {
+      img: './../assets/supporters/10.jpg'
+    },
+    {
+      img: './../assets/supporters/11.jpg'
+    },
+  ]
+
 }

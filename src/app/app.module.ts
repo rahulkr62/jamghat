@@ -24,6 +24,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EramStoriesComponent } from './eram-stories/eram-stories.component';
 import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
 import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
     DonationComponent,
     EramStoriesComponent,
     KalamStoriesComponent,
-    RajivStoriesComponent
+    RajivStoriesComponent,
+    AanganDaycareComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
     BrowserAnimationsModule,
     NgbModule,
     MatDialogModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

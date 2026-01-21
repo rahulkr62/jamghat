@@ -1,0 +1,18 @@
+.aangan-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+.aangan-grid p{
+  font-size: 15px;
+  line-height: 1.7;
+}
+.aangan-img{
+  border-radius: 15px;
+  overflow: hidden;
+}
+.aangan-grid h3{
+  font-size: 20px;
+  font-weight: 500;
+}

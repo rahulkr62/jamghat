@@ -15,6 +15,7 @@ import { DonationComponent } from './donation/donation.component';
 import { EramStoriesComponent } from './eram-stories/eram-stories.component';
 import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
 import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
+import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.component';
 
 const routes: Routes = [
   {
@@ -64,6 +65,9 @@ const routes: Routes = [
   },
   {
     path:'donation', component:DonationComponent
+  },
+  {
+    path:'aangan', component:AanganDaycareComponent
   },
 ];
 
