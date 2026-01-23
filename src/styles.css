@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 :root{
   --color-primary: #d82521;
+  --badge-color: #ef4444;
   --hover-color:#B71C1C;
   --green: #2E7D32;
   --blue: #1E5AA8;
@@ -93,9 +94,10 @@ ul li {
   font-weight: 700!important;
 }
 .heading-badge {
-  color: #ef4444!important;
+  color: var(--badge-color)!important;
   font-size: 12px!important;
   font-weight: 600!important;
+  border-bottom: 2px solid var(--badge-color);
 }
 mat-icon{
   width: auto!important;
