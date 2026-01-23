@@ -19,33 +19,8 @@ section{
 .mission-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.activities-heading{
-  font-size: 17px;
-  font-weight: 500;
-}
-.activities ul{
-  margin-top: 15px;
-  /* margin-left: 20px; */
-}
-.activities ul li{
-  display: flex;
-  margin-bottom: 10px;
-  line-height: 1.7;
-  font-size: 15px;
-}
-
-.activities ul li mat-icon{
-  font-size: 14px;
-}
-.li-check{
-  margin-right: 10px;
-}
-.aim-img{
-  border-radius: 20px;
-  overflow: hidden;
+  gap: 40px;
+  align-items: center;
 }
 
 .mission-cont{
@@ -102,7 +77,17 @@ section{
   background-color: #fff;
   padding: 20px;
   align-self: flex-start;
+  box-shadow: 0 0px 20px -5px rgba(0, 0, 0, 0.18);
+  margin-top: 50px;
+  /* height: 100%; */
   border-radius: 6px;
+}
+.mission-card-1{
+  margin-top: 0px;
+}
+.mission-card h4{
+  margin-top: 20px;
+  font-weight: 600;
 }
 .mission-card .icon{
   position: absolute;
@@ -112,6 +97,10 @@ section{
   display: inline-flex;
   padding: 15px;
   border-radius: 10px;
+}
+.mission-card-frame{
+  height: 380px;
+  border: 1px solid var(--color-primary);
 }
 .icon img{
   width: 30px;
@@ -125,3 +114,32 @@ section{
   line-height: 1.7;
   font-size: 15px;
 } */
+
+.vision-mission-sec{
+  background-color: var(--bg-light-primary);
+}
+
+/* objectives */
+.objectives-grid{
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.obj-card{
+  display: flex;
+  gap: 16px;
+}
+.obj-card h3{
+  margin-bottom: 5px;
+  font-weight: 500;
+  /* margin-top: 16px; */
+}
+.obj-icon{
+  width: 40px;
+  flex-shrink: 0;
+}
+.obj-icon img{
+  height: auto;
+}

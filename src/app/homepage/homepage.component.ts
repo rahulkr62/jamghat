@@ -12,7 +12,7 @@ export class HomepageComponent {
   pauseOnFocus = false;
 
   images = [
-    // '../../assets/s1.jpg',
+    '../../assets/kingCharles.jpg',
     '../../assets/s2.jpg',
     '../../assets/s4.jpg',
   ];
