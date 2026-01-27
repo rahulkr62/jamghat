@@ -52,6 +52,6 @@ export class HeaderComponent {
   }
   closeMenu() {
     this.menuOpen = false;
-    window.scroll(0,0)
+    // window.scroll(0,0)
   }
 }
