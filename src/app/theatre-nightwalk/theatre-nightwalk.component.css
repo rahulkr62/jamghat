@@ -1,7 +1,4 @@
-.aangan-wrapper {
-  /* background: #f8fafc; */
-  /* padding: 60px 0; */
-}
+
 
 .aangan-header {
   text-align: center;
@@ -91,7 +88,6 @@
 .aangan-grid2 .aangan-card{
   margin-bottom: 0;
 }
-
 .aangan-img{
   border-radius: 10px;
   overflow: hidden;

@@ -16,16 +16,53 @@
       <!-- MENU -->
       <div class="navigation d-flex align-items-center" [class.open]="menuOpen">
         <ul class="d-flex">
-          <li routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
-            Who we are</li>
+          <li routerLinkActive="active" [ngClass]="{ active: isEventActive() }" mat-button [matMenuTriggerFor]="currentMenu"
+            (click)="closeMenu()" [routerLinkActiveOptions]="{ exact: true }" class="d-flex align-items-center">
+            Who we are <mat-icon>arrow_drop_down</mat-icon></li>
+          <mat-menu #currentMenu="matMenu">
+            <button mat-menu-item routerLink="about">
+              Overview
+            </button>
 
-          <!-- <li routerLink="" routerLinkActive="active" (click)="closeMenu()">What we do</li> -->
+            <button mat-menu-item routerLink="ourTeam">
+              Our Team
+            </button>
+            <button mat-menu-item routerLink="success-stories">
+              Success Stories
+            </button>
+          </mat-menu>
+          <li routerLinkActive="active" [ngClass]="{ active: whatEventActive() }" mat-button [matMenuTriggerFor]="whatMenu" 
+            (click)="closeMenu()" [routerLinkActiveOptions]="{ exact: true }" class="d-flex align-items-center">What we do <mat-icon>arrow_drop_down</mat-icon></li>
+          <mat-menu #whatMenu="matMenu">
+            <button mat-menu-item routerLink="what-we-do">
+              Overview
+            </button>
+            <button mat-menu-item  [matMenuTriggerFor]="whatCurrentMenu">
+              Current interventions
+            </button>
+
+            <button mat-menu-item routerLink="previous-intervention">
+              Previous Interventions
+            </button>
+          </mat-menu>
+          <mat-menu #whatCurrentMenu="matMenu">
+            <button mat-menu-item routerLink="/praangan">
+              Praangan
+            </button>
+            <button mat-menu-item routerLink="/aangan-day-care">
+               Aangan Day Care
+            </button>
+            <button mat-menu-item routerLink="theatre-nightwalk">
+               Theatre and Nightwalk
+            </button>
+          </mat-menu>
 
           <li routerLink="outreach-impact" routerLinkActive="active" (click)="closeMenu()">Outreach & Impact</li>
 
-          <li routerLink="success-stories" routerLinkActive="active" (click)="closeMenu()">Success Stories</li>
+          <!-- <li routerLink="success-stories" routerLinkActive="active" (click)="closeMenu()">Success Stories</li> -->
 
-          <li routerLink="certification" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions</li>
+          <li routerLink="certification" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions
+          </li>
 
           <li routerLink="events" routerLinkActive="active" (click)="closeMenu()">Events</li>
           <li routerLink="media-center" routerLinkActive="active" (click)="closeMenu()">Media Centre</li>

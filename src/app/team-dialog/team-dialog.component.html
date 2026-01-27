@@ -1,0 +1,20 @@
+<div class="team-dialog">
+
+  <div class="dialog-header">
+    <h2>{{ data.name }}</h2>
+    <button mat-icon-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div class="dialog-body">
+    <img [src]="data.image" class="dialog-img" />
+
+    <h4 class="dialog-role">{{ data.role }}</h4>
+
+    <p class="dialog-desc">
+      {{ data.description }}
+    </p>
+  </div>
+
+</div>

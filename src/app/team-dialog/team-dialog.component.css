@@ -1,0 +1,31 @@
+.team-dialog {
+  padding: 20px;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+.dialog-role {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.dialog-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #334155;
+  /* white-space: pre-line; */
+}

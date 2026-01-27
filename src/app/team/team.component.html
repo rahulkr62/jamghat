@@ -2,7 +2,6 @@
    <section class="ngo-team-wrapper wrapper-section">
     <div class="container">
       <div class="ngo-team-header">
-        <span class="ngo-legal-badge">Meet Our Team</span>
         <h2 class="ngo-team-title title-heading">Our Board Members</h2>
         <p class="ngo-team-subtitle">
          Guiding the Vision, Leading with Experience
@@ -12,7 +11,7 @@
       <!-- Team Grid -->
       <div class="ngo-team-grid">
         
-        <div class="ngo-team-card" *ngFor="let member of teamMembers">
+        <div class="ngo-team-card" *ngFor="let member of boardMembers">
           <div class="ngo-team-imgWrap">
             <img [src]="member.image" class="ngo-team-img" />
           </div>
@@ -21,11 +20,11 @@
             <h4 class="ngo-team-name">{{ member.name }}</h4>
             <span class="ngo-team-role">{{ member.role }} </span>
     
-            <!-- <p class="ngo-team-desc">
+            <p class="ngo-team-desc">
               {{ member.description }}
-            </p> -->
+            </p>
 
-            <p class="d-flex align-items-center teamViewBtn">View More <mat-icon>arrow_right_alt</mat-icon></p>
+            <p class="d-flex align-items-center teamViewBtn" (click)="openTeamDialog(member)">View More <mat-icon>arrow_right_alt</mat-icon></p>
           </div>
           <!-- <div><mat-icon>arrow_right_alt</mat-icon></div> -->
         </div>
@@ -35,6 +34,7 @@
     </div>
     <div class="container">
       <div class="ngo-team-header">
+        <span class="ngo-legal-badge">Meet Our</span>
         <h2 class="ngo-team-title title-heading">Talented team behind Jamghat</h2>
         <!-- <p class="ngo-team-subtitle">
          Guiding the Vision, Leading with Experience
@@ -53,11 +53,11 @@
             <h4 class="ngo-team-name">{{ member.name }}</h4>
             <span class="ngo-team-role">{{ member.role }} </span>
     
-            <!-- <p class="ngo-team-desc">
+            <p class="ngo-team-desc">
               {{ member.description }}
-            </p> -->
+            </p>
 
-            <p class="d-flex align-items-center teamViewBtn">View More <mat-icon>arrow_right_alt</mat-icon></p>
+            <p class="d-flex align-items-center teamViewBtn"  (click)="openTeamDialog(member)">View More <mat-icon>arrow_right_alt</mat-icon></p>
           </div>
           <!-- <div><mat-icon>arrow_right_alt</mat-icon></div> -->
         </div>
@@ -68,3 +68,6 @@
 
   </section>
 </div>
+
+
+

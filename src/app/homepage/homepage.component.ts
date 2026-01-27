@@ -34,14 +34,16 @@ export class HomepageComponent {
       location: 'Jama Masjid',
       image: '../../assets/s2.jpg',
       description: 'The Daycare centre – Aangan, was started in 2008 and since then has been working directly with the most vulnerable street children.',
-      activities: ['Safe Daycare', 'Nutrition & Health']
+      activities: ['Safe Daycare', 'Nutrition & Health'],
+      link:'/aangan-day-care'
     },
     {
       title: 'PRAANGAN',
       location: 'Available at Multiple Locations',
       image: '../../assets/s3.jpg',
       description: 'Praangan is our outreach programme that aims to connect with street children and their families.',
-      activities: ['Street Outreach', 'Family Connect']
+      activities: ['Street Outreach', 'Family Connect'],
+      link:'/praangan'
     }
   ];
 

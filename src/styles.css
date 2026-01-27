@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 :root{
-  --color-primary: #d82521;
+  --color-primary: #D03E36;
   --badge-color: #ef4444;
   --hover-color:#B71C1C;
   --green: #2E7D32;
@@ -9,7 +9,8 @@
   --light-background: #F8F8F8;
   --dark:#263238;
   --color-secondary: #FFB44C;
-  --bg-light-primary: #F2E9E9;
+  --bg-light-primary: #f7f2f0;
+  /* --bg-light-primary: #f7f7f7; */
   /* soft pinch color */
   --color-3: #FFF3E6; 
 }

@@ -23,6 +23,22 @@ export class HeaderComponent {
       }
     });
   }
+  isEventActive(): boolean {
+    return (
+      this.router.isActive('/about', false) ||
+      this.router.isActive('/ourTeam', false) ||
+      this.router.isActive('/success-stories', false)
+    );
+  }
+  whatEventActive(): boolean {
+    return (
+      this.router.isActive('/what-we-do', false) ||
+      this.router.isActive('/praangan', false) ||
+      this.router.isActive('/aangan-day-care', false) ||
+      this.router.isActive('/previous-intervention', false) ||
+      this.router.isActive('/theatre-nightwalk', false)
+    );
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

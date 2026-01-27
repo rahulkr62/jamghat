@@ -16,6 +16,10 @@ import { EramStoriesComponent } from './eram-stories/eram-stories.component';
 import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
 import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
 import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { PraanganComponent } from './praangan/praangan.component';
+import { TheatreNightwalkComponent } from './theatre-nightwalk/theatre-nightwalk.component';
+import { PreviousInterventionsComponent } from './previous-interventions/previous-interventions.component';
 
 const routes: Routes = [
   {
@@ -26,6 +30,9 @@ const routes: Routes = [
   },
   {
     path:'about', component:AboutComponent
+  },
+  {
+    path:'what-we-do', component:WhatWeDoComponent
   },
   {
     path:'outreach-impact', component:OutreachImpactComponent
@@ -67,7 +74,16 @@ const routes: Routes = [
     path:'donation', component:DonationComponent
   },
   {
-    path:'aangan', component:AanganDaycareComponent
+    path:'aangan-day-care', component:AanganDaycareComponent
+  },
+  {
+    path:'praangan', component:PraanganComponent
+  },
+  {
+    path:'theatre-nightwalk', component:TheatreNightwalkComponent
+  },
+  {
+    path:'previous-intervention', component:PreviousInterventionsComponent
   },
 ];
 

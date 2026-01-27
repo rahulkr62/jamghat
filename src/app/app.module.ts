@@ -26,6 +26,13 @@ import { KalamStoriesComponent } from './kalam-stories/kalam-stories.component';
 import { RajivStoriesComponent } from './rajiv-stories/rajiv-stories.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.component';
+import { TeamDialogComponent } from './team-dialog/team-dialog.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import {MatCardModule} from '@angular/material/card';
+import { PraanganComponent } from './praangan/praangan.component';
+import { TheatreNightwalkComponent } from './theatre-nightwalk/theatre-nightwalk.component';
+import { PreviousInterventionsComponent } from './previous-interventions/previous-interventions.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +54,12 @@ import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.componen
     EramStoriesComponent,
     KalamStoriesComponent,
     RajivStoriesComponent,
-    AanganDaycareComponent
+    AanganDaycareComponent,
+    TeamDialogComponent,
+    WhatWeDoComponent,
+    PraanganComponent,
+    TheatreNightwalkComponent,
+    PreviousInterventionsComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +69,8 @@ import { AanganDaycareComponent } from './aangan-daycare/aangan-daycare.componen
     NgbModule,
     MatDialogModule,
     CarouselModule,
+     MatMenuModule,
+     MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
