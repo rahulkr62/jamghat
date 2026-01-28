@@ -781,6 +781,7 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .ngo-team-role {
@@ -788,6 +789,7 @@
   color: var(--color-primary);
   font-weight: 500;
 }
+
 
 .ngo-team-desc {
   font-size: 14px;
@@ -895,9 +897,9 @@
 
 /* Badge */
 .ngo-press-badge {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 2px 8px;
   border-radius: 6px;
 }
 

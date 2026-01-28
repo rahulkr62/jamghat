@@ -375,6 +375,44 @@
   color: #7c2d12;
   line-height: 1.7;
 }
+.outreach-wrapper {
+  padding: 80px 0;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.outreach-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.outreach-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.outreach-subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* Card */
+.outreach-card {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Chart */
+.outreach-card canvas {
+  width: 100% !important;
+  height: 420px !important;
+}
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -384,6 +422,13 @@
 
   .impact-title {
     font-size: 28px;
+  }
+    .outreach-title {
+    font-size: 26px;
+  }
+
+  .outreach-card canvas {
+    height: 300px !important;
   }
 }
 

@@ -52,9 +52,9 @@
 
 /* Badge */
 .ngo-press-badge {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 2px 8px;
   border-radius: 6px;
 }
 
@@ -70,7 +70,7 @@
 
 /* Text */
 .ngo-press-heading {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #0f172a;
   margin-bottom: 8px;
@@ -94,6 +94,14 @@
 .ngo-press-link:hover {
   text-decoration: underline;
 }
+
+.media-center-grid{
+  display: grid;
+  grid-template-columns: 2fr .5fr;
+  gap: 24px;
+}
+
+
 
 @media screen and (max-width:768px) {
   .ngo-press-card {

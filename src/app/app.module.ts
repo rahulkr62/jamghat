@@ -33,6 +33,7 @@ import {MatCardModule} from '@angular/material/card';
 import { PraanganComponent } from './praangan/praangan.component';
 import { TheatreNightwalkComponent } from './theatre-nightwalk/theatre-nightwalk.component';
 import { PreviousInterventionsComponent } from './previous-interventions/previous-interventions.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { PreviousInterventionsComponent } from './previous-interventions/previou
     WhatWeDoComponent,
     PraanganComponent,
     TheatreNightwalkComponent,
-    PreviousInterventionsComponent
+    PreviousInterventionsComponent,
+    VolunteerComponent
   ],
   imports: [
     BrowserModule,

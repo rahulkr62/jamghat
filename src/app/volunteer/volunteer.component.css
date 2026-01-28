@@ -1,0 +1,143 @@
+/* .volunteer-wrapper {
+  padding: 60px 0;
+  background: #fffaf6;
+} */
+
+.volunteer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.title-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.why-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.why-item .number {
+  background: #e14b32;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.why-item h4{
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+.info-box {
+  background: var(--bg-light-primary);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.info-box h4{
+  font-weight: 500;
+  font-size: 18px;
+}
+.info-box ul {
+  padding-left: 10px;
+}
+.info-box li{
+  margin-bottom: 10px;
+}
+.info-box li mat-icon{
+  font-size: 16px;
+  margin-right: 10px;
+  color: var(--color-primary);
+}
+.volunteer-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.volunteer-form h3 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+input, textarea,select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+}
+
+.chips {
+  margin: 15px 0;
+}
+
+.chips label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.chips span {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 10px 0;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+.checkbox *{
+  align-self: flex-start;
+  width: auto;
+}
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  /* font-size: 16px; */
+  cursor: pointer;
+}
+.submit-btn mat-icon{
+  font-size: 16px;
+  margin-right: 10px;
+}

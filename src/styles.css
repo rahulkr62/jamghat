@@ -19,7 +19,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+  color: initial;
+}
 body {
   font-family: "Manrope", sans-serif;
   color: #555;
@@ -95,6 +98,7 @@ ul li {
   font-weight: 700!important;
 }
 .heading-badge {
+  display: inline-flex;
   color: var(--badge-color)!important;
   font-size: 12px!important;
   font-weight: 600!important;

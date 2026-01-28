@@ -30,6 +30,13 @@ export class HeaderComponent {
       this.router.isActive('/success-stories', false)
     );
   }
+  resourcesEventActive(): boolean {
+    return (
+      this.router.isActive('/events', false) ||
+      this.router.isActive('/certification', false) ||
+      this.router.isActive('/media-center', false)
+    );
+  }
   whatEventActive(): boolean {
     return (
       this.router.isActive('/what-we-do', false) ||

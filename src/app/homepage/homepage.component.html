@@ -23,28 +23,28 @@
   </div>
   <div class="stats-container">
     <div class="stat-item">
-      <h2>4</h2>
+      <h2>2</h2>
       <p>Programs running</p>
     </div>
 
     <div class="divider"></div>
 
     <div class="stat-item">
-      <h2>120+</h2>
+      <h2>150</h2>
       <p>Happy Donators</p>
     </div>
 
     <div class="divider"></div>
 
     <div class="stat-item">
-      <h2>50+</h2>
+      <h2>500+</h2>
       <p>Dedicated Volunteers</p>
     </div>
 
     <div class="divider"></div>
 
     <div class="stat-item">
-      <h2>1200K</h2>
+      <h2>2500K</h2>
       <p>Donations to Poor</p>
     </div>
   </div>
@@ -452,7 +452,7 @@
           <img [src]="member.image" class="ngo-team-img" />
         </div>
 
-        <h4 class="ngo-team-name">{{ member.name }}</h4>
+        <h4 class="ngo-team-name"  (click)="openTeamDialog(member)">{{ member.name }}</h4>
         <span class="ngo-team-role">{{ member.role }} </span>
 
         <!-- <p class="ngo-team-desc">
@@ -505,7 +505,7 @@
             during NGO Jamghat's...
           </p>
 
-          <a class="ngo-press-link">
+          <a href="https://photogallery.indiatimes.com/events/delhi/huma-qureshi-at-a-cultural-event/articleshow/64495429.cms" target="_blank" class="ngo-press-link">
             Read Full Release →
           </a>
         </div>
@@ -531,7 +531,7 @@
             staging an Invisible theatre performing, There is a motley group of people at a bus stop.
           </p>
 
-          <a class="ngo-press-link">
+          <a href="https://www.gettyimages.in/detail/news-photo/jamghat-volunteers-stage-an-invisible-theatre-skit-on-news-photo/88866472" target="_blank" class="ngo-press-link">
             Read Full Release →
           </a>
         </div>

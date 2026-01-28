@@ -20,6 +20,7 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { PraanganComponent } from './praangan/praangan.component';
 import { TheatreNightwalkComponent } from './theatre-nightwalk/theatre-nightwalk.component';
 import { PreviousInterventionsComponent } from './previous-interventions/previous-interventions.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
 
 const routes: Routes = [
   {
@@ -84,6 +85,9 @@ const routes: Routes = [
   },
   {
     path:'previous-intervention', component:PreviousInterventionsComponent
+  },
+  {
+    path:'volunteer', component:VolunteerComponent
   },
 ];
 

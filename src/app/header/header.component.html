@@ -1,10 +1,18 @@
 <div class="header-container" [class.sticky]="isSticky">
   <div class="header-top">
     <div class="social-link">
-      <img src="../../assets/youtube.png" alt="">
-      <img src="../../assets/facebook.png" alt="">
-      <img src="../../assets/instagram.png" alt="">
-      <img src="../../assets/linkedin.png" alt="">
+      <a href="https://www.facebook.com/childrensjamghat" target="_blank">
+        <img src="../../assets/facebook.png" alt="">
+      </a>
+      <a href=" https://www.instagram.com/childrensjamghat/" target="_blank">
+        <img src="../../assets/instagram.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/company/19206974/admin/page-posts/published/" target="_blank">
+        <img src="../../assets/linkedin.png" alt="">
+      </a>
+      <a href="https://www.youtube.com/@jamghat" target="_blank">
+        <img src="../../assets/youtube.png" alt="">
+      </a>
     </div>
   </div>
   <div class="container">
@@ -35,7 +43,7 @@
             (click)="closeMenu()" [routerLinkActiveOptions]="{ exact: true }" class="d-flex align-items-center">What we do <mat-icon>arrow_drop_down</mat-icon></li>
           <mat-menu #whatMenu="matMenu">
             <button mat-menu-item routerLink="what-we-do">
-              Overview
+              All Programs
             </button>
             <button mat-menu-item  [matMenuTriggerFor]="whatCurrentMenu">
               Current interventions
@@ -59,13 +67,30 @@
 
           <li routerLink="outreach-impact" routerLinkActive="active" (click)="closeMenu()">Outreach & Impact</li>
 
+
+
           <!-- <li routerLink="success-stories" routerLinkActive="active" (click)="closeMenu()">Success Stories</li> -->
 
-          <li routerLink="certification" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions
-          </li>
+          <!-- <li routerLink="certification" routerLinkActive="active" (click)="closeMenu()">Certifications & recognitions
+          </li> -->
+          <li routerLinkActive="active" [ngClass]="{ active: resourcesEventActive() }" mat-button [matMenuTriggerFor]="resourcesMenu"
+            (click)="closeMenu()" [routerLinkActiveOptions]="{ exact: true }" class="d-flex align-items-center">
+            Resources <mat-icon>arrow_drop_down</mat-icon></li>
+          <mat-menu #resourcesMenu="matMenu">
+            <button mat-menu-item routerLink="events">
+              Events
+            </button>
 
-          <li routerLink="events" routerLinkActive="active" (click)="closeMenu()">Events</li>
-          <li routerLink="media-center" routerLinkActive="active" (click)="closeMenu()">Media Centre</li>
+            <button mat-menu-item routerLink="media-center">
+              Media Centre
+            </button>
+            <button mat-menu-item routerLink="certification">
+              Certifications & recognitions
+            </button>
+          </mat-menu>
+          <!-- <li routerLink="events" routerLinkActive="active" (click)="closeMenu()">Events</li>
+          <li routerLink="media-center" routerLinkActive="active" (click)="closeMenu()">Media Centre</li> -->
+          <li routerLink="volunteer" routerLinkActive="active" (click)="closeMenu()">Volunteer</li>
           <!-- <li routerLink="" routerLinkActive="active" (click)="closeMenu()">Resource Center</li> -->
 
           <li routerLink="contact" routerLinkActive="active" (click)="closeMenu()">Contact Us</li>

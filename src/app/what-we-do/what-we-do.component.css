@@ -53,6 +53,7 @@
 
 .work-image img {
   width: 100%;
+  aspect-ratio: 1/.8;
   border-radius: 18px;
 }
 
